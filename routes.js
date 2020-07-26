@@ -11,7 +11,7 @@ router.get("/tasks", async (req, res) => {
 router.post("/tasks", async (req, res) => {
   const task = new Task({
     name: req.body.name,
-    status: req.body.status
+    done: req.body.done
   });
   await task.save();
   res.send(task);
@@ -35,8 +35,8 @@ router.put("/tasks/:id", async (req, res) => {
       task.name = req.body.name;
     }
 
-    if (req.body.status) {
-      task.status = req.body.status;
+    if (req.body.done) {
+      task.done = req.body.done;
     }
 
     await task.save();
