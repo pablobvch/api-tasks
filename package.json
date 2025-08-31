@@ -1,5 +1,5 @@
 {
-  "name": "api-bertoni",
+  "name": "api-taskdb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "1.19.0",
+    "dotenv": "^17.2.1",
     "express": "4.17.1",
     "mongoose": "5.9.25"
   }
